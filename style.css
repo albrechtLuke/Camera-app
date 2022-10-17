@@ -6,35 +6,38 @@ html, body{
 }
 #camera, #camera--view, #camera--sensor, #camera--output{
     position: fixed;
-    height: 100%;
+padding-top: 15vmin;
+    height: 60%;
     width: 100%;
     object-fit: cover;
 }
 #camera--view, #camera--sensor, #camera--output{
     transform: scaleX(-1);
-    filter: FlipH;
+
 }
 #camera--trigger{
-    width: 200px;
+    width: 70px;
+    height: 70px;
     background-color: black;
     color: white;
     font-size: 16px;
-    border-radius: 30px;
+    border-radius: 300px;
     border: none;
-    padding: 15px 20px;
+    padding: 15px;
     text-align: center;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     position: fixed;
-    bottom: 30px;
-    left: calc(50% - 100px);
+    bottom: 20px;
+    left: calc(50% - 35px);
 }
 .taken{
-    height: 100px!important;
-    width: 100px!important;
+    height: 80px!important;
+    width: 80px!important;
     transition: all 0.5s ease-in;
-    border: solid 3px white;
+    border: solid 1px white;
+    border-radius: 15px;
     box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
     top: 20px;
-    right: 20px;
+    left: 20px;
     z-index: 2;
 }
+
