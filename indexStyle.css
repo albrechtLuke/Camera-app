@@ -1,0 +1,30 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+iframe {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+img {
+    width: 100%;
+    height:100%;
+    z-index: 9;
+    position: relative;
+}
+.zstack {
+    width: 100%;
+    height: 100%;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+
+}
+.zstack > * {
+	grid-area: 1/1/1/1;
+}
