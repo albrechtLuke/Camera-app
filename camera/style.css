@@ -14,13 +14,20 @@ html, body{
     
 }
 
-#camera--view, #camera--sensor, #camera--output{
+#camera--view, #camera--sensor{
     position: absolute;
     height: 100%;
     width: 100%;
     object-fit: cover;
     z-index: 1;
    
+}
+#camera--output {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 3;
 }
 #camera--view, #camera--sensor, #camera--output{
     transform: scaleX(1);
